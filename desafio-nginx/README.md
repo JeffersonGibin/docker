@@ -2,7 +2,7 @@
 
 Nesse desafio você colocará em prática o que aprendemos em relação a utilização do nginx como proxy reverso. A idéia principal é que quando um usuário acesse o nginx, o mesmo fará uma chamada em nossa aplicação node.js. Essa aplicação por sua vez adicionará um registro em nosso banco de dados mysql, cadastrando um nome na tabela people.
 
-O retorno da aplicação node.js para o nginx deverá ser:
+O retorno da aplicação `node.js` para o `nginx` deverá ser:
 
 ```html
 <h1>Full Cycle Rocks!</h1>
@@ -21,6 +21,7 @@ Gere o docker-compose de uma forma que basta apenas rodarmos: `docker-compose up
      um nome default será cadastrado.
 
 ### API
- - Disponivel em : http://localhost:9000
- - `GET /people` - retorna as pessoas cadastradas
- - `POST /people` - Cadastra uma pessoa quando o seguinte payload é enviado. `{"name": ""}`
+ - API estará disponivel em `http://localhost:9000`
+ - `GET /people` - Lista de pessoas cadastradas
+ - `POST /people` - Cadastrar uma pessoas.
+   - Payload `{"name": ""}`
